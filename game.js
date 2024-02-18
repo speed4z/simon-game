@@ -16,7 +16,7 @@ $('body').keydown(function(event){
     nextSeq();
 });
 
-$(".container").on("tap",function(){
+$("h1").on("tap",function(){
   $('#level-title').text("Level "+level);
     started = true;
     nextSeq();
