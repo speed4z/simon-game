@@ -14,7 +14,13 @@ $('body').keydown(function(event){
     $('#level-title').text("Level "+level);
     started = true;
     nextSeq();
-})
+});
+
+$(".container").on("tap",function(){
+  $('#level-title').text("Level "+level);
+    started = true;
+    nextSeq();
+});
 
 $(".btn").click(function(event){
     var chosenColour = $(this).attr("id");
